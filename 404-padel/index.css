@@ -1,0 +1,66 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.principal{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.principal img{
+  width: 30%;
+}
+.principal span{
+  font-size: 3.2vh;
+  width: 80%;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: #084953;
+  text-align:center;
+}
+
+.principal span .ball-padel{
+  width: 1.4rem;
+  height: 1.4rem;
+  animation-name: rotate;
+  animation: rotate 1s linear infinite;  
+  margin: -4px
+}
+.ball-padel,.principal span,img::selection{
+  background-color: transparent;
+}
+  @keyframes rotate{
+  from{
+    transform:rotate(0deg)
+  }
+  to{
+    transform: rotate(359deg);
+  }
+  
+}
+
+#refresh{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0CCE6B;
+  border: none;
+  width: 20%;
+  height: 2.5rem;
+  color: white;
+  margin-top: 2rem;
+  border-radius: 0.5em;
+  font-size: 2.5vh;
+  min-width:150px ;
+
+}
+#refresh:hover{
+  background-color: #089b4f;
+
+
+}
+
+
